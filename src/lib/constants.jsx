@@ -19,17 +19,17 @@ export const Profiles = {
   },
   linkedin: {
     title: "LinkedIn",
-    url: "https://www.linkedin.com/in/ozcaneren",
+    url: "https://www.linkedin.com/in/eren-ozcan/",
     icon: <LinkedinIcon size={16} />
   },
   twitter: {
     title: "Twitter",
-    url: "https://twitter.com/ozcaneren",
+    url: "https://twitter.com/erenozcandev",
     icon: <TwitterIcon size={16} />
   },
   instagram: {
     title: "Instagram",
-    url: "https://www.instagram.com/ozcaneren",
+    url: "https://www.instagram.com/erenozcan17/",
     icon: <InstagramIcon size={16} />
   },
 };
