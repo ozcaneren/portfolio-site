@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div>
+    <div className="">
       <p className="text-xl mb-6 leading-slacker text-sky-800">
         Welcome to the Home page!
       </p>

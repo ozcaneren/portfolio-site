@@ -10,6 +10,10 @@ import {
   Wand2Icon,
   BookmarkIcon,
 } from "lucide-react";
+import CardWithHoverAnimation from "@/components/designs/CardWithHoverAnimation";
+import ProjectCard from "@/components/designs/ProjectCard";
+import Breadcrumb from "@/components/designs/Breadcrumb";
+
 
 export const Profiles = {
   github: {
@@ -49,7 +53,12 @@ export const Links = [
     href: '/project',
     label: 'Projects',
     icon: <NavigationIcon size={16} />
-  }
+  },
+  {
+    href: '/component',
+    label: 'Components',
+    icon: <Wand2Icon size={16} />
+  },
 ];
 
 export const Projects = {
@@ -95,5 +104,20 @@ export const Projects = {
     url: "https://github.com/ozcaneren",
     techStack: "Express",
     visibility: "Private",
+  },
+}
+
+export const Component = {
+  "card-hover": {
+    component: <CardWithHoverAnimation />,
+    title: "Card with hover animation",
+  },
+  "project-card": {
+    component: <ProjectCard />,
+    title: "Project Card",
+  },
+  "breadcrumb": {
+    component: <Breadcrumb />,
+    title: "Breadcrumb",
   },
 }

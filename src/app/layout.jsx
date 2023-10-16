@@ -9,17 +9,18 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  
   return (
-    <html className="overflow-hidden scroll-smooth antialiased" lang="en">
-      <body className="font-sans text-base text-gray-700">
-        <main>
+    <html className="" lang="en">
+      <body className="overflow-auto text-base text-gray-700">
+        <main className="">
           <div className="lg:flex">
-            <SideMenu className="relative hidden lg:flex">
+            <SideMenu className="hidden lg:flex">
               <MenuContent />
             </SideMenu>
             <div className="flex flex-1">
-              <div className="w-full px-6 pb-8 pt-8 lg:px-8 lg:pb-16 lg:pt-24">
-                <div className="mx-auto w-full lg:mb-0 lg:max-w-3xl">
+              <div className="w-full px-6 pt-8 lg:px-8 lg:pt-24">
+                <div className="mx-auto w-full lg:max-w-3xl">
                   {children}
                 </div>
               </div>
