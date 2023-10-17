@@ -18,7 +18,7 @@ export const DesignComponents = () => {
                 </p>
               </div>
             </div>
-            <div className="bg-white p-2 rounded-lg">
+            <div className="">
               {component.component}
             </div>
           </div>
