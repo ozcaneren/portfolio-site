@@ -13,7 +13,7 @@ export function HeadingDivider({ title = "" }) {
 					animate={animate}
 					exit={exit}
 					transition={transition}
-					className="flex items-center font-extrabold text-2xl md:text-3xl relative w-full uppercase gap-4 bg-clip-text text-transparent text-[#232332]"
+					className="flex items-center font-extrabold text-2xl md:text-3xl relative w-full uppercase gap-4 bg-clip-text text-[#232332]"
 				>
 					{title}
 				</m.h2>
