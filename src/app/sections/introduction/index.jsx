@@ -11,15 +11,14 @@ export function WelcomeSection() {
   let [count, setCount] = useState(0);
   const [text] = useState([
     "design modern UI",
-    "build interactive UI using React",
-    "develop websites using Next.js",
+    "develop web apps",
   ]);
 
   useEffect(() => {
     let interval = setInterval(() => {
       setCount(count + 1);
 
-      if (count === 3) {
+      if (count === 2) {
         setCount(0);
       }
     }, 2000);
@@ -69,8 +68,8 @@ export function WelcomeSection() {
                         ? "-100%"
                         : count === 2
                         ? "-200%"
-                        : count === 3
-                        ? "-300%"
+                        // : count === 3
+                        // ? "-300%"
                         : "0",
                     left: "13px",
                   }}

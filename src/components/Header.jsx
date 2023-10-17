@@ -1,8 +1,6 @@
 "use client";
 
-import { Logo } from "@/components/Logo";
-// import { Menu } from "@/components/Menu";
-import { ConnectMedia } from "@/components/ConnectMedia";
+import { Logo, Menu, ConnectMedia } from "@/components";
 
 export function AppHeader() {
   return (

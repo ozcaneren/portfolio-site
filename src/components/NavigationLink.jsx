@@ -5,7 +5,6 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { ArrowUpRightIcon, AtSignIcon } from 'lucide-react'
 
-
 export const NavigationLink = memo(({ href, label, icon }) => {
   const pathname = usePathname()
   const iconCmp = icon ?? <AtSignIcon size={16} />

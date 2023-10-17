@@ -1,6 +1,8 @@
 import "./globals.css";
 import { AppHeader } from "@/components/Header";
 import { AppFooter } from "@/components/Footer";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 export const metadata = {
   title: "Eren Ozcan",
@@ -12,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="bg-[#F6F5F0]">
         <AppHeader />
-        {children}
+        <Suspense fallback={<Loading />}>{children}</Suspense>
         <AppFooter />
       </body>
     </html>

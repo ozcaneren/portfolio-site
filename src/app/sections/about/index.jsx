@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { LazyMotion, domAnimation, useInView } from "framer-motion";
-import { HeadingDivider } from "@/components/HeadingDivider";
+import { HeadingDivider } from "@/components";
 
 export function AboutSection() {
   const ref = useRef(null);

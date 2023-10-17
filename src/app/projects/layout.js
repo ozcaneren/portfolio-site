@@ -1,17 +1,17 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState, useRef } from "react";
+import { useRef } from "react";
 import { LazyMotion, domAnimation, useInView } from "framer-motion";
 import { HeadingDivider, GithubProjects } from "@/components";
 
-export function ProjectSection() {
+export default function Page() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
   return (
     <LazyMotion features={domAnimation}>
-      <section id="projects" className="">
+      <section id="projects" className="py-8 md:py-10 max-w-7xl mx-auto px-4">
         <HeadingDivider title="Projects" />
         <div className="pt-10 pb-16 max-w-5xl flex flex-col gap-3">
           <div
@@ -26,9 +26,9 @@ export function ProjectSection() {
           >
             <GithubProjects />
             <div className="py-4">
-              <Link href="/projects">
+              <Link href="/">
                 <span className="font-medium text-base text-[#084CCF]">
-                  See more
+                  Back to home
                 </span>
               </Link>
             </div>

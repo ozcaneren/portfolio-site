@@ -3,17 +3,8 @@ import {
   TwitterIcon,
   LinkedinIcon,
   InstagramIcon,
-  YoutubeIcon,
-  SparklesIcon,
-  PencilLineIcon,
-  NavigationIcon,
-  Wand2Icon,
-  BookmarkIcon,
 } from "lucide-react";
-import { BsFillEnvelopeOpenFill, BsGithub, BsLinkedin } from "react-icons/bs";
-import CardWithHoverAnimation from "@/components/designs/CardWithHoverAnimation";
-import ProjectCard from "@/components/designs/ProjectCard";
-import Breadcrumb from "@/components/designs/Breadcrumb";
+import { BsFillEnvelopeOpenFill } from "react-icons/bs";
 
 export const Profiles = {
   github: {
@@ -37,29 +28,6 @@ export const Profiles = {
     icon: <InstagramIcon size={16} />,
   },
 };
-
-export const Links = [
-  {
-    href: "/",
-    label: "Home",
-    icon: <SparklesIcon size={16} />,
-  },
-  {
-    href: "/cv",
-    label: "CV",
-    icon: <PencilLineIcon size={16} />,
-  },
-  {
-    href: "/project",
-    label: "Projects",
-    icon: <NavigationIcon size={16} />,
-  },
-  {
-    href: "/component",
-    label: "Components",
-    icon: <Wand2Icon size={16} />,
-  },
-];
 
 export const Projects = {
   "redesigned-fullstack-app": {
@@ -93,22 +61,6 @@ export const Projects = {
     techStack: "NextJS",
     visibility: "Public",
     id: 4,
-  },
-
-};
-
-export const Component = {
-  "card-hover": {
-    component: <CardWithHoverAnimation />,
-    title: "Card with hover animation",
-  },
-  "project-card": {
-    component: <ProjectCard />,
-    title: "Project Card",
-  },
-  breadcrumb: {
-    component: <Breadcrumb />,
-    title: "Breadcrumb",
   },
 };
 
