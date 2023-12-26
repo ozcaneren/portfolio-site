@@ -7,7 +7,7 @@ export function ProjectSection() {
   return (
     <section id="projects" className="">
       <HeadingDivider title="Projects" />
-      <div className="pt-10 pb-16 max-w-5xl flex flex-col gap-3">
+      <div className="pt-10 pb-16 max-w-5xl flex flex-col gap-y-3">
         <div className="text-xl font-light leading-relaxed">
           <GithubProjects />
           <div className="py-4">

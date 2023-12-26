@@ -6,7 +6,7 @@ export function AboutSection() {
   return (
     <section id="about" className="py-8 md:py-10">
       <HeadingDivider title="About me" />
-      <div className="pt-10 pb-8 max-w-5xl flex flex-col gap-3">
+      <div className="pt-10 pb-8 max-w-5xl flex flex-col gap-y-3">
         <div className="text-xl font-light leading-relaxed">
           <p>
             Hi, I'm Eren. I'm a full-stack developer(heavy on the front-end).
