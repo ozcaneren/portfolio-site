@@ -5,7 +5,7 @@ export const GithubProjects = () => {
   return (
     <div className="w-full">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {Object.values(Projects).map((project) => (
+      {Object.values(Projects).slice(-3).reverse().map((project) => (
           <div
             className="rounded-lg border border-[#084CCF]/30 bg-white p-4 text-sm focus:outline-none"
             key={project.url}

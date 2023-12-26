@@ -4,6 +4,5 @@ export { GithubProjects } from "./GithubProjects";
 export { AppHeader } from "./Header";
 export { HeadingDivider } from "./HeadingDivider";
 export { Loader } from "./Loader";
-export { Logo } from "./Logo";
 export { NavigationLink } from "./NavigationLink";
 export { SideMenu } from "./SideMenu";

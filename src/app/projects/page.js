@@ -1,5 +1,5 @@
 import { HeadingDivider } from "@/components";
-import { GithubProjects } from "@/components";
+import { AllProjects } from "@/components/AllProjects";
 
 export default function Page() {
   return (
@@ -8,7 +8,7 @@ export default function Page() {
         <HeadingDivider title="Projects" />
         <div className="pt-10 pb-16 max-w-5xl flex flex-col gap-3">
           <div className="text-xl font-light leading-relaxed">
-            <GithubProjects />
+            <AllProjects />
           </div>
         </div>
       </div>
