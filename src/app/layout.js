@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import { AppHeader } from "@/components/Header";
 import { AppFooter } from "@/components/Footer";
@@ -14,7 +15,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="bg-[#F6F5F0]">
         <AppHeader />
-        <Suspense fallback={<Loading />}>{children}</Suspense>
+        <Suspense fallback={<Loading />}>
+          {children}
+          <Analytics />
+        </Suspense>
         <AppFooter />
       </body>
     </html>
