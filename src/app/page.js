@@ -6,7 +6,7 @@ import { ProjectSection } from "./sections/project";
 
 export default function Page() {
   return (
-    <div className="max-w-7xl mx-auto px-4">
+    <div className="max-w-5xl mx-auto px-4">
       <WelcomeSection /> 
       <AboutSection />
       <ProjectSection />

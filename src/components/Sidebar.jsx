@@ -9,9 +9,9 @@ import { FaGithub } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { TbShare3 } from "react-icons/tb";
 
-export const SideMenu = () => {
+function Sidebar() {
   return (
-    <div className="fixed h-full lg:w-60 xl:w-72 border-r border-gray-200 bg-[#f3f5f7]">
+    <div className="hidden md:block md:h-full lg:w-60 xl:w-72 border-r border-gray-200 bg-[#f3f5f7]">
       <div className="">
         {/* Head Section */}
         <div className="flex items-center justify-left my-1 px-5 h-16">
@@ -138,4 +138,6 @@ export const SideMenu = () => {
       </div>
     </div>
   );
-};
+}
+
+export default Sidebar;

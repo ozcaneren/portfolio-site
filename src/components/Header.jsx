@@ -1,6 +1,6 @@
 "use client";
 
-import { Logo, Menu, ConnectMedia } from "@/components";
+import { Logo, ConnectMedia } from "@/components";
 
 export function AppHeader() {
   return (
@@ -8,7 +8,6 @@ export function AppHeader() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center gap-3">
           <Logo />
-          {/* <Menu /> */}
           <div className="flex items-center gap-5">
             <ConnectMedia />
           </div>
