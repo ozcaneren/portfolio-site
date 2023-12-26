@@ -38,7 +38,7 @@ function Vaul() {
                       />
                       <div className="mx-2">
                         <h1 className="font-medium">Eren Ozcan</h1>
-                        <p className="text-sm text-gray-800">
+                        <p className="text-xs text-gray-800">
                           Full-Stack Developer (heavy on the front-end)
                         </p>
                       </div>

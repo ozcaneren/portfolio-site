@@ -1,9 +1,12 @@
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
+import { Inter } from "next/font/google";
 import { SideMenu } from "@/components";
 import Vaul from "@/components/Vaul";
 import { Suspense } from "react";
 import Loading from "./loading";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Eren Ozcan",
@@ -13,8 +16,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-white">
-        <div className="flex flex-col md:flex-row h-full">
+      <body className={inter.className}>
+        <div className="bg-white flex flex-col md:flex-row h-full">
           <SideMenu />
           <Vaul />
           <Suspense fallback={<Loading />}>
