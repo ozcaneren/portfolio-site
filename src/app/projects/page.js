@@ -5,11 +5,11 @@ export default function Page() {
   return (
     <section className="py-8 md:py-10">
       <div className="">
-        <HeadingDivider title="Projects" />
-        <div className="pt-10 pb-16 max-w-5xl flex flex-col">
-          <div className="text-xl font-light leading-relaxed">
-            <AllProjects />
-          </div>
+        <h1 className="font-extrabold text-2xl md:text-3xl text-[#232332]">
+          All Projects
+        </h1>
+        <div className="pt-10 pb-16 flex flex-col">
+          <AllProjects />
         </div>
       </div>
     </section>

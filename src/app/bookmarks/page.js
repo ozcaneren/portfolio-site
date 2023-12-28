@@ -5,7 +5,9 @@ export default function Page() {
   return (
     <section className="py-8 md:py-10">
       <div className="flex justify-center items-center flex-col">
-        <HeadingDivider title="Bookmarks" />
+        <h1 className="font-extrabold text-2xl md:text-3xl text-[#232332]">
+          Bookmarks
+        </h1>
         <div className="flex justify-center items-center flex-col mt-16 px-6 md:px-0">
           <h1 className="font-semibold text-lg mb-2">Coming Soon</h1>
           <Image
