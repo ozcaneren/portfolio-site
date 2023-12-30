@@ -15,7 +15,7 @@ export function AboutSection() {
           </p>
           <p className="mt-2">
             I'm a student at the University of Mugla Sitki Kocman, studying
-            Businees. I'm currently in my second year. I'm a self-taught
+            Business. I'm currently in my second year. I'm a self-taught
             developer, and I've been learning for about 1 years now. I'm
             currently learning Next.js, and I'm loving it so far. I'm also
             learning TypeScript. I'm also learning a bit of Ruby on Rails, but
