@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
           <SideMenu />
           <Vaul />
           <Suspense fallback={<Loading />}>
-            <div className="mx-auto md:max-w-7xl md:mx-auto lg:pl-72 xl:pl-80">{children}</div>
+            <div className="mx-auto md:max-w-7xl h-full w-full md:mx-auto md:pl-64 xl:pl-80">{children}</div>
             <Analytics />
           </Suspense>
         </div>

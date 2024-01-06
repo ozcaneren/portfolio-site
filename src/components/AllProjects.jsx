@@ -3,8 +3,8 @@ import { Projects } from "@/lib/constants";
 
 export const AllProjects = () => {
   return (
-    <div className="w-full">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div className="">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
         {Object.values(Projects).map((project) => (
           <div
             className="rounded-lg border border-[#084CCF]/30 bg-white p-4 text-sm focus:outline-none"

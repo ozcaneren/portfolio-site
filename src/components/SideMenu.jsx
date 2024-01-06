@@ -7,12 +7,12 @@ import { ConnectMedia } from "./ConnectMedia";
 
 export const SideMenu = () => {
   return (
-    <div className="hidden md:fixed md:block h-full lg:w-72 xl:w-80 border-r border-gray-200 bg-[#f3f5f7]">
+    <div className="hidden md:fixed md:block h-full lg:w-64 xl:w-80 border-r border-gray-200 bg-[#f3f5f7]">
       <div className="">
         {/* Head Section */}
         <div className="flex items-center justify-left my-1 px-5 h-16">
           <Image
-            src="https://cdn.discordapp.com/attachments/1171884068816826371/1189141162817232978/20230525_185754.jpg?ex=659d1502&is=658aa002&hm=b6a8495c628d09030a2d5ccf9ebadbd7b8b3b19bd87e2554fd3db7fe097ae611&"
+            src="https://i.hizliresim.com/6voiw7b.jpg"
             width={40}
             height={40}
             className="rounded-full object-cover object-center w-[45px] h-[45px]"
@@ -21,7 +21,7 @@ export const SideMenu = () => {
           <div className="mx-2">
             <h1 className="font-medium">Eren Ozcan</h1>
             <p className="text-xs text-gray-800">
-              Full-Stack Developer (heavy front)
+              Full-Stack Developer
             </p>
           </div>
         </div>

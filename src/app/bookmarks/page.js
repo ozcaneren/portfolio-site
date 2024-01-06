@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function Page() {
   return (
-    <section className="py-8 md:py-10">
-      <div className="flex justify-center items-center flex-col">
+    <section className="py-8 md:py-10 px-4 md:px-3 xl:px-0">
+      <div className="">
         <h1 className="font-extrabold text-2xl md:text-3xl text-[#232332]">
           Bookmarks
         </h1>
