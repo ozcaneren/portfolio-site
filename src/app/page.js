@@ -7,11 +7,11 @@ export default function Page() {
   return (
     <div className="px-4 md:px-3 xl:px-0">
       <section id="about" className="py-8 md:py-10">
-        <h1 className="font-extrabold text-2xl md:text-3xl text-[#232332]">
+        <h1 className="font-extrabold text-2xl md:text-3xl text-[#232332] dark:text-slate-200">
           About me
         </h1>
         <div className="pt-10 pb-8 max-w-5xl flex flex-col gap-y-3">
-          <div className="text-lg font-light leading-relaxed">
+        <div className="text-lg text-black dark:text-white font-light leading-relaxed">
             <p>
               Hi, I'm Eren. I'm a full-stack developer(heavy on the front-end).
               I'm currently working on a few projects, including a personal
@@ -33,7 +33,7 @@ export default function Page() {
         </div>
       </section>
       <section id="projects" className="">
-        <h1 className="font-extrabold text-2xl md:text-3xl text-[#232332]">
+        <h1 className="font-extrabold text-2xl md:text-3xl text-[#232332] dark:text-slate-200">
           Projects
         </h1>
         <div className="pt-10 pb-16 max-w-5xl flex flex-col gap-y-3">
@@ -41,7 +41,7 @@ export default function Page() {
             <GithubProjects />
             <div className="py-4">
               <Link href="/projects">
-                <span className="font-medium text-base text-[#084CCF]">
+                <span className="font-medium text-base text-[#084CCF] dark:text-[#4577d4]">
                   See more
                 </span>
               </Link>

@@ -8,10 +8,11 @@ import { FaCode } from "react-icons/fa6";
 import { MdOutlinePushPin } from "react-icons/md";
 import { PiVault } from "react-icons/pi";
 import { ConnectMedia } from "./ConnectMedia";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 function Vaul() {
   return (
-    <div className="block md:hidden bg-white border-b border-gray-200 w-full">
+    <div className="block md:hidden bg-white dark:bg-zinc-800 border-b border-gray-200 dark:border-gray-600 w-full">
       <Drawer.Root shouldScaleBackground>
         <Drawer.Trigger asChild>
           <button className="flex justify-start items-center h-12 mx-4 gap-x-2">
@@ -21,8 +22,8 @@ function Vaul() {
         </Drawer.Trigger>
         <Drawer.Portal>
           <Drawer.Overlay className="fixed inset-0 bg-black/40" />
-          <Drawer.Content className="bg-zinc-100 flex flex-col rounded-t-[10px] h-[96%] mt-24 fixed bottom-0 left-0 right-0">
-            <div className="p-4 bg-white rounded-t-[10px] flex-1">
+          <Drawer.Content className="bg-zinc-100 dark:bg-zinc-700 flex flex-col rounded-t-[10px] h-[96%] mt-24 fixed bottom-0 left-0 right-0">
+            <div className="p-4 bg-white dark:bg-zinc-700 rounded-t-[10px] flex-1">
               <div className="mx-auto w-12 h-1.5 flex-shrink-0 rounded-full bg-zinc-300 mb-8" />
               <div className="max-w-md mx-auto">
                 <div className="">
@@ -37,8 +38,10 @@ function Vaul() {
                         alt="avatar"
                       />
                       <div className="mx-2">
-                        <h1 className="font-medium">Eren Ozcan</h1>
-                        <p className="text-xs text-gray-800">
+                        <h1 className="font-medium text-black dark:text-white">
+                          Eren Ozcan
+                        </h1>
+                        <p className="text-xs text-gray-800 dark:text-gray-200">
                           Full-Stack Developer
                         </p>
                       </div>
@@ -50,7 +53,7 @@ function Vaul() {
                           <Drawer.Trigger asChild>
                             <Link
                               href="/"
-                              className="flex h-8 justify-between items-center text-sm text-gray-800 hover:bg-gray-200 hover:rounded-md"
+                              className="flex h-8 justify-between items-center text-sm text-gray-800 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-400/80 hover:rounded-md"
                             >
                               <div className="flex justify-center items-center mx-2">
                                 <div>
@@ -58,7 +61,7 @@ function Vaul() {
                                 </div>
                                 <div className="font-medium ml-2">Home</div>
                               </div>
-                              <div className="mx-2 bg-gray-300 flex justify-center items-center h-5 px-2 rounded-md">
+                              <div className="mx-2 bg-gray-300 dark:bg-gray-500 text-black dark:text-white flex justify-center items-center h-5 px-2 rounded-md">
                                 1
                               </div>
                             </Link>
@@ -68,7 +71,7 @@ function Vaul() {
                           <Drawer.Trigger asChild>
                             <Link
                               href="/projects"
-                              className="flex h-8 justify-between items-center text-sm text-gray-800 hover:bg-gray-200 hover:rounded-md"
+                              className="flex h-8 justify-between items-center text-sm text-gray-800 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-400/80 hover:rounded-md"
                             >
                               <div className="flex justify-center items-center mx-2">
                                 <div>
@@ -76,7 +79,7 @@ function Vaul() {
                                 </div>
                                 <div className="font-medium ml-2">Projects</div>
                               </div>
-                              <div className="mx-2 bg-gray-300 flex justify-center items-center h-5 px-2 rounded-md">
+                              <div className="mx-2 bg-gray-300 dark:bg-gray-500 text-black dark:text-white flex justify-center items-center h-5 px-2 rounded-md">
                                 2
                               </div>
                             </Link>
@@ -86,7 +89,7 @@ function Vaul() {
                           <Drawer.Trigger asChild>
                             <Link
                               href="/bookmarks"
-                              className="flex h-8 justify-between items-center text-sm text-gray-800 hover:bg-gray-200 hover:rounded-md"
+                              className="flex h-8 justify-between items-center text-sm text-gray-800 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-400/80 hover:rounded-md"
                             >
                               <div className="flex justify-center items-center mx-2">
                                 <div>
@@ -96,7 +99,7 @@ function Vaul() {
                                   Bookmarks
                                 </div>
                               </div>
-                              <div className="mx-2 bg-gray-300 flex justify-center items-center h-5 px-2 rounded-md">
+                              <div className="mx-2 bg-gray-300 dark:bg-gray-500 text-black dark:text-white flex justify-center items-center h-5 px-2 rounded-md">
                                 3
                               </div>
                             </Link>
@@ -108,6 +111,17 @@ function Vaul() {
                     <div className="border mx-6 my-1"></div>
                     {/* Social */}
                     <ConnectMedia />
+                    <div className="flex items-end justify-center px-3 absolute bottom-0 w-full">
+                      <ul className="flex flex-col items-start justify-start border-blue-900 gap-y-3 w-full my-4">
+                        <li className="w-full">
+                          <div className="flex h-8 w-full justify-between items-center text-sm text-gray-800 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-400/80 hover:rounded-md">
+                            <div className="flex items-center mx-2 w-full">
+                              <ThemeSwitcher />
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
