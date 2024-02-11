@@ -4,8 +4,6 @@ import {
   LinkedinIcon,
   InstagramIcon,
 } from "lucide-react";
-import { BsFillEnvelopeOpenFill } from "react-icons/bs";
-
 
 export const Links = [
   {
@@ -34,64 +32,78 @@ export const Links = [
   },
 ];
 
-export const Projects = {
-  "rick-and-morty-wiki": {
+export const Projects = [
+  {
     title: "Rick and Morty Wiki",
     description: "A wiki for Rick and Morty",
-    url: "https://github.com/ozcaneren/nextjs-first-project",
     techStack: "NextJS, Tailwind, rickandmortyapi",
-    visibility: "Public",
-    id: 1,
+    repoVisibility: "Public",
+    repoUrl: "https://github.com/ozcaneren/rick-and-morty-wiki",
+    demoActive: true,
+    demoUrl: "https://nextjs-first-project-teal.vercel.app/",
+    id: 0,
   },
-  "basic-dashboard": {
-    title: "Hotel Website with Dashboard",
-    description: "Basic hotel website with dashboard",
-    url: "https://github.com/ozcaneren/fullstack-site-with-dashboard",
-    techStack: "React, Express, MongoDB, Tailwind",
-    visibility: "Public",
-    id: 2,
-  },
-  "redesigned-fullstack-app": {
-    title: "Fullstack Hotel App",
-    description: "A fullstack app for a hotel",
-    url: "https://github.com/ozcaneren/redesigned-fullstack-app",
-    techStack: "React, Tailwind, NodeJS, Express, MongoDB",
-    visibility: "Public",
-    id: 3,
-  },
-  "archived-portfolio-site": {
-    title: "Archived Portfolio Site",
-    description: "A React App",
-    url: "https://profound-churros-7dc115.netlify.app/",
-    techStack: "React, Tailwind",
-    visibility: "Public",
-    id: 4,
-  },
-  "hotel-website-demo": {
-    title: "Hotel Website Demo",
-    description: "Clone of a https://loryma.com/",
-    url: "https://github.com/ozcaneren/hotel-website-demo",
-    techStack: "NextJS, Tailwind",
-    visibility: "Public",
-    id: 5,
-  },
-  "dashboard-template": {
+  {
     title: "Dashboard Template",
     description: "A dashboard template for a any website",
-    url: "https://dashboard-template-sand-six.vercel.app/",
     techStack: "React, Tailwind",
-    visibility: "Public",
+    repoVisibility: "Public",
+    repoUrl: "https://github.com/ozcaneren/dashboard-template",
+    demoActive: true,
+    demoUrl: "https://dashboard-template-sand-six.vercel.app/",
+    id: 1,
+  },
+  {
+    title: "Fullstack Hotel App",
+    description: "A fullstack app for a hotel",
+    techStack: "React, Tailwind, NodeJS, Express, MongoDB",
+    repoVisibility: "Public",
+    repoUrl: "https://github.com/ozcaneren/redesigned-fullstack-app",
+    demoActive: false,
+    demoUrl: "",
+    id: 2,
+  },
+  {
+    title: "Archived Portfolio Site",
+    description: "A React App",
+    techStack: "React, Tailwind",
+    repoVisibility: "Public",
+    repoUrl: "https://github.com/ozcaneren/Archived-Portfolio-Site",
+    demoActive: true,
+    demoUrl: "https://profound-churros-7dc115.netlify.app/",
+    id: 3,
+  },
+  {
+    title: "Hotel Website Demo",
+    description: "Clone of a https://loryma.com/",
+    techStack: "NextJS, Tailwind",
+    repoVisibility: "Public",
+    repoUrl: "https://github.com/ozcaneren/hotel-website-demo",
+    demoActive: true,
+    demoUrl: "https://demo-hotel-website-erenozcan.vercel.app",
+    id: 4,
+  },
+  {
+    title: "E-Commerce App",
+    description: "E-commerce with Carousel template",
+    techStack: "NextJS, Tailwind, React-Slick,",
+    repoVisibility: "Private",
+    repoUrl: "",
+    demoActive: true,
+    demoUrl: "https://effective-fiesta-two.vercel.app/",
+    id: 5,
+  },
+  {
+    title: "Modernist To-Do App",
+    description: "A modern to-do app with Clerk authentication and MongoDB database.",
+    techStack: "NextJS, Tailwind, Clerk, MongoDB",
+    repoVisibility: "Private",
+    repoUrl: "",
+    demoActive: true,
+    demoUrl: "https://modernist-todo-app.vercel.app/",
     id: 6,
   },
-  "custom-ecommerce": {
-    title: "Custom E-commerce",
-    description: "E-commerce with Carousel template",
-    url: "https://effective-fiesta-two.vercel.app/",
-    techStack: "NextJS, Tailwind, React-Slick,",
-    visibility: "Private",
-    id: 7,
-  },
-};
+];
 
 export const SITE_ROUTES = {
   home: "/",

@@ -1,32 +1,39 @@
-import Link from "next/link";
+"use client";
+
 import { Projects } from "@/lib/constants";
+import { useRouter } from "next/navigation";
+import { CgDetailsLess } from "react-icons/cg";
 
 export const AllProjects = () => {
+  const router = useRouter();
   return (
     <div className="">
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
         {Object.values(Projects).map((project) => (
           <div
             className="rounded-lg border border-[#084CCF]/30 dark:border-gray-200/20 bg-white dark:bg-zinc-700 p-4 text-sm focus:outline-none"
-            key={project.url}
+            key={project.repoUrl}
           >
             <div className="mb-2 flex items-center gap-3">
-              <Link
-                href={project.url}
-                className="block cursor-pointer truncate font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased transition-colors hover:text-pink-500 dark:hover:text-pink-300"
+              <div
+                onClick={() => router.push(`projects/${project.id}`)}
+                className="flex items-center gap-1 cursor-pointer truncate font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased transition-colors hover:text-pink-500 dark:hover:text-pink-300"
               >
                 {project.title}
-              </Link>
+                <span>
+                  <CgDetailsLess size={20} />
+                </span>
+              </div>
               <div
                 className={`relative inline-block select-none whitespace-nowrap rounded-full ${
-                  project.visibility === "Public"
+                  project.repoVisibility === "Public"
                     ? "bg-purple-500"
-                    : project.visibility === "Private"
+                    : project.repoVisibility === "Private"
                     ? "bg-emerald-600"
                     : "bg-purple-500"
                 } py-1 px-2 align-baseline font-sans text-xs font-medium capitalize leading-none tracking-wide text-white`}
               >
-                <div className="mt-px">{project.visibility}</div>
+                <div className="mt-px">{project.repoVisibility}</div>
               </div>
             </div>
             <p className="block font-sans text-sm font-normal leading-normal text-gray-700 dark:text-gray-300 antialiased">
