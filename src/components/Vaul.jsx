@@ -6,6 +6,7 @@ import Image from "next/image";
 import { TfiAnchor } from "react-icons/tfi";
 import { FaCode } from "react-icons/fa6";
 import { MdOutlinePushPin } from "react-icons/md";
+import { HiOutlineDocumentText } from "react-icons/hi2";
 import { PiVault } from "react-icons/pi";
 import { ConnectMedia } from "./ConnectMedia";
 import ThemeSwitcher from "./ThemeSwitcher";
@@ -88,15 +89,15 @@ function Vaul() {
                         <li className="w-full">
                           <Drawer.Trigger asChild>
                             <Link
-                              href="/bookmarks"
+                              href="/cv"
                               className="flex h-8 justify-between items-center text-sm text-gray-800 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-400/80 hover:rounded-md"
                             >
                               <div className="flex justify-center items-center mx-2">
                                 <div>
-                                  <MdOutlinePushPin size={16} />
+                                  <HiOutlineDocumentText size={16} />
                                 </div>
                                 <div className="font-medium ml-2">
-                                  Bookmarks
+                                  CV
                                 </div>
                               </div>
                               <div className="mx-2 bg-gray-300 dark:bg-gray-500 text-black dark:text-white flex justify-center items-center h-5 px-2 rounded-md">

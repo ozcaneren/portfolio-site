@@ -15,7 +15,7 @@ export const AllProjects = () => {
             className="w-full h-[180px] px-2 py-1 border border-[#084CCF]/30 dark:border-gray-200/30 bg-white dark:bg-[#27272A] rounded-lg"
           >
             <div className="flex flex-col w-full h-full">
-              <div className="h-1/5 flex justify-left items-center border-b border-solid border-black">
+              <div className="h-1/5 flex justify-left items-center border-b border-solid border-black/40 dark:border-white/50">
                 <div className="w-3/4 h-full flex justify-start items-center">
                   <span className="text-zinc-800 dark:text-gray-100 text-base font-medium">
                     {project.title}
