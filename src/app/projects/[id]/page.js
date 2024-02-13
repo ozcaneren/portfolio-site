@@ -12,13 +12,13 @@ const Detail = ({ params }) => {
         {project.title}
       </h1>
       <div className="pt-10 pb-16 flex flex-col md:flex-row gap-y-6 md:gap-x-6">
-        <div className="">
+        <div className="border-2 border-solid rounded-2xl">
           <Image
-            width={300}
-            height={300}
+            width={1920}
+            height={1080}
             src={project.image}
             alt={project.title}
-            className="w-[350px] h-[350px] md:w-[400px] md:h-[400px] rounded-2xl"
+            className="w-[500px] h-[350px] md:w-[500px] md:h-[350px] object-cover rounded-2xl"
           />
         </div>
         <div className="w-full flex-1">
@@ -37,7 +37,10 @@ const Detail = ({ params }) => {
             </p>
             {project.repoVisibility === "Public" && (
               <p className="font-medium text-md md:text-lg">
-                <Link href={project.repoUrl} className="flex items-center gap-1">
+                <Link
+                  href={project.repoUrl}
+                  className="flex items-center gap-1"
+                >
                   Repository
                   <div className="">
                     <IoMdLink size={20} />
@@ -47,7 +50,10 @@ const Detail = ({ params }) => {
             )}
             {project.demoActive && (
               <p className="font-medium text-md md:text-lg">
-                <Link href={project.demoUrl} className="flex items-center gap-1">
+                <Link
+                  href={project.demoUrl}
+                  className="flex items-center gap-1"
+                >
                   Demo
                   <div className="">
                     <IoMdLink size={20} />

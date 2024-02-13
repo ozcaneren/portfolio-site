@@ -11,7 +11,7 @@ export default function Page() {
           About me
         </h1>
         <div className="pt-10 pb-8 max-w-5xl flex flex-col gap-y-3">
-        <div className="text-lg text-black dark:text-white font-light leading-relaxed">
+        <div className="text-lg text-black dark:text-white leading-relaxed">
             <p>
               Hi, I'm Eren. I'm a full-stack developer(heavy on the front-end).
               I'm currently working on a few projects, including a personal
