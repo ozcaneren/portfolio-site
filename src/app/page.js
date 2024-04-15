@@ -11,23 +11,23 @@ export default function Page() {
           About me
         </h1>
         <div className="pt-10 pb-8 max-w-5xl flex flex-col gap-y-3">
-        <div className="text-lg text-black dark:text-white leading-relaxed">
+          <div className="text-lg text-black dark:text-white leading-relaxed">
             <p>
-              Hi, I'm Eren. I'm a full-stack developer(heavy on the front-end).
-              I'm currently working on a few projects, including a personal
-              website, and a few other things.
+              Hi, I'm Eren. I'm a full-stack developer, heavily focused on
+              front-end development. Currently, I'm working on several projects,
+              including a personal website, among other things.
             </p>
             <p className="mt-2">
-              I'm a student at the University of Mugla Sitki Kocman, studying
-              Business. I'm currently in my second year. I'm a self-taught
-              developer, and I've been learning for about 1 years now. I'm
-              currently learning Next.js, and I'm loving it so far. I'm also
-              learning TypeScript. I'm also learning a bit of Ruby on Rails, but
-              I'm not focusing on those as much as I am on the other things.
+              I'm a student at Mugla Sitki Kocman University, studying Business.
+              I'm currently in my second year. I've been self-teaching
+              development for about a year now. Currently, I'm diving into
+              Next.js, and I'm thoroughly enjoying it. I'm also picking up
+              TypeScript. While I'm dabbling in Ruby on Rails as well, my main
+              focus is on the current/modern technologies.
             </p>
             <p className="mt-2">
               <span className="font-medium">Tech Stack:</span> React, Next.js,
-              TailwindCSS, Node.js, Express.js, MongoDB, and a few other things.
+              TailwindCSS, Node.js, Express.js, MongoDB, and a few others.
             </p>
           </div>
         </div>
