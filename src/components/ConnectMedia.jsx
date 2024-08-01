@@ -11,11 +11,11 @@ export function ConnectMedia() {
           <li className="w-full" key={item.id}>
             <a
               href={item.url}
-              className="flex h-8 justify-between items-center text-sm text-gray-800 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-400/80 hover:rounded-md"
+              className="flex h-10 justify-between items-center text-[#111827] dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-400/80 hover:rounded-md"
             >
-              <div className="flex justify-center items-center mx-2">
+              <div className="flex justify-center items-center py-2 mx-2 gap-x-2 font-medium">
                 <div>{item.icon}</div>
-                <div className="font-medium ml-2">{item.title}</div>
+                <div className="font-medium">{item.title}</div>
               </div>
               <div className="flex justify-center items-center h-5 px-3 rounded-md">
                 <TbShare3 size={16} />

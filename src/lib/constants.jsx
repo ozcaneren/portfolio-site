@@ -4,6 +4,17 @@ import {
   LinkedinIcon,
   InstagramIcon,
 } from "lucide-react";
+import { GoNorthStar } from "react-icons/go";
+import { FiLink } from "react-icons/fi";
+import { MdTitle } from "react-icons/md";
+import { FaCode, FaRegCopyright } from "react-icons/fa";
+import { MdMenu } from "react-icons/md";
+import { FaStore } from "react-icons/fa6";
+import { IoShareSocialOutline } from "react-icons/io5";
+import { VscLayoutCentered } from "react-icons/vsc";
+import { TfiAnchor } from "react-icons/tfi";
+import { HiOutlineDocumentText } from "react-icons/hi2";
+
 
 export const Links = [
   {
@@ -116,3 +127,21 @@ export const SITE_ROUTES = {
   home: "/",
   projects: "/projects",
 };
+
+export const Shortcuts = [
+  {
+    href: "/",
+    label: "Home",
+    icon: <TfiAnchor size={16} />,
+  },
+  {
+    href: "/projects",
+    label: "Projects",
+    icon: <FaCode size={16} />,
+  },
+  {
+    href: "/cv",
+    label: "CV",
+    icon: <HiOutlineDocumentText size={16} />,
+  }
+];
