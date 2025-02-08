@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <main className="flex flex-col md:flex-row gap-12">
-      <div className="w-full md:w-1/2">
-        <section className="flex flex-col items-center md:items-start mb-12">
+    <main className="flex flex-col xl:flex-row gap-12">
+      <div className="w-full xl:w-1/2">
+        <section className="flex flex-col items-center xl:items-start mb-12">
           <img
             src="/eren.jpg"
             alt=""
@@ -14,7 +14,7 @@ export default function Page() {
           />
           <h1 className="ml-1 text-4xl font-bold mb-4">Eren Ozcan</h1>
           <div className="ml-1 max-w-3xl flex flex-col gap-y-3">
-            <div className="text-lg text-center md:text-left text-black leading-relaxed">
+            <div className="text-lg text-center xl:text-left text-black leading-relaxed">
               <p>
                 Hi, I'm Eren. I'm a full-stack developer, heavily focused on
                 front-end development. Currently, I'm working on several
@@ -37,10 +37,10 @@ export default function Page() {
         </section>
       </div>
 
-      <div className="w-full md:w-1/2 flex flex-col gap-4">
-        <div className="flex flex-col md:flex-row gap-4">
+      <div className="w-full xl:w-1/2 flex flex-col gap-4">
+        <div className="flex flex-col xl:flex-row gap-4">
 
-          <div className="w-full md:w-1/2 grid grid-cols-2 gap-4">
+          <div className="w-full xl:w-1/2 grid grid-cols-2 gap-4">
             <div className="h-48 flex bg-gray-200 border border-gray-200 rounded-3xl">
               <div className="flex flex-col items-start justify-center p-4 md:px-4 md:py-0">
                 <img src="githubicon.png" alt="" className="h-12" />
@@ -91,7 +91,7 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="w-full md:w-1/2">
+          <div className="w-full xl:w-1/2">
             <Link href="/resume" className="w-1/2">
               <div className="rounded-3xl flex items-center justify-center border border-gray-200 relative group cursor-pointer">
                 <img src="cv.png" alt="" className="h-[400px]" />
@@ -104,8 +104,8 @@ export default function Page() {
         
         </div>
 
-        <div className="flex flex-col md:flex-row flex-wrap gap-4 justify-center items-center">
-          <div className="w-full md:w-[calc(50%-0.5rem)] h-[400px] p-4 border border-gray-200 bg-[#f8d6e3] rounded-3xl">
+        <div className="flex flex-col lg:flex-row flex-wrap gap-4 justify-center items-center">
+          <div className="w-full lg:w-[calc(50%-0.5rem)] h-[400px] p-4 border border-gray-200 bg-[#f8d6e3] rounded-3xl">
             <div className="flex flex-col items-start justify-center gap-2">
               <div className="w-full flex justify-between gap-2">
                 <img src="vercel.png" alt="" className="h-12" />
@@ -125,7 +125,7 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-[calc(50%-0.5rem)] h-[400px] p-4 border border-gray-200 bg-sky-100 rounded-3xl">
+          <div className="w-full lg:w-[calc(50%-0.5rem)] h-[400px] p-4 border border-gray-200 bg-sky-100 rounded-3xl">
             <div className="flex flex-col items-start justify-center gap-2">
               <div className="w-full flex justify-between gap-2">
                 <img src="vercel.png" alt="" className="h-12" />
@@ -145,7 +145,7 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-[calc(50%-0.5rem)] h-[400px] p-4 border border-gray-200 bg-orange-100 rounded-3xl">
+          <div className="w-full lg:w-[calc(50%-0.5rem)] h-[400px] p-4 border border-gray-200 bg-orange-100 rounded-3xl">
             <div className="flex flex-col items-start justify-center gap-2">
               <div className="w-full flex justify-between gap-2">
                 <img src="vite.png" alt="" className="h-12" />
@@ -165,7 +165,7 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-[calc(50%-0.5rem)] h-[400px] p-4 border border-gray-200 bg-fuchsia-100 rounded-3xl">
+          <div className="w-full lg:w-[calc(50%-0.5rem)] h-[400px] p-4 border border-gray-200 bg-fuchsia-100 rounded-3xl">
             <div className="flex flex-col items-start justify-center gap-2">
               <div className="w-full flex justify-between gap-2">
                 <img src="vercel.png" alt="" className="h-12" />
