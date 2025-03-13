@@ -23,9 +23,9 @@ export default function Page() {
               <p className="mt-2">
                 I'm a student at Muğla Sıtkı Koçman University, studying
                 Business. I'm currently in my third year. I've been
-                self-teaching development for about a year now. I'm diving into 
-                Next.js, and I'm thoroughly enjoying it. I'm also picking up 
-                TypeScript. While I'm dabbling in Ruby on Rails as well, my main 
+                self-teaching development for about a year now. I'm diving into
+                Next.js, and I'm thoroughly enjoying it. I'm also picking up
+                TypeScript. While I'm dabbling in Ruby on Rails as well, my main
                 focus is on modern technologies.
               </p>
               <p className="mt-2">
@@ -39,7 +39,6 @@ export default function Page() {
 
       <div className="w-full xl:w-1/2 flex flex-col gap-4">
         <div className="flex flex-col xl:flex-row gap-4">
-
           <div className="w-full xl:w-1/2 grid grid-cols-2 gap-4">
             <div className="h-48 flex bg-gray-200 border border-gray-200 rounded-3xl">
               <div className="flex flex-col items-start justify-center p-4 md:px-4 md:py-0">
@@ -101,25 +100,42 @@ export default function Page() {
               </div>
             </Link>
           </div>
-        
         </div>
 
         <div className="flex flex-col lg:flex-row flex-wrap gap-4 justify-center items-center">
+          <div className="w-full lg:w-[calc(50%-0.5rem)] h-[400px] p-4 border border-gray-200 bg-orange-100 rounded-3xl">
+            <div className="flex flex-col items-start justify-center gap-2">
+              <div className="w-full flex justify-between gap-2">
+                <img src="vite.png" alt="" className="h-12" />
+                <h3 className="text-gray-700 font-medium text-sm">Projects</h3>
+              </div>
+              <h1 className="font-medium text-gray-900 text-xl">
+                Ozcan Gida Product Management App
+              </h1>
+              <div className="mt-4 w-full text-center h-60 bg-gray-200 rounded-xl">
+                <Link href="https://ozcangida.vercel.app/">
+                  <img
+                    src="ozcangida.png"
+                    alt=""
+                    className="w-full h-full object-contain bg-black rounded-xl"
+                  />
+                </Link>
+              </div>
+            </div>
+          </div>
           <div className="w-full lg:w-[calc(50%-0.5rem)] h-[400px] p-4 border border-gray-200 bg-[#f8d6e3] rounded-3xl">
             <div className="flex flex-col items-start justify-center gap-2">
               <div className="w-full flex justify-between gap-2">
                 <img src="vercel.png" alt="" className="h-12" />
                 <h3 className="text-gray-700 font-medium text-sm">Projects</h3>
               </div>
-              <h1 className="font-medium text-gray-900 text-xl">
-                Modernist To-do App
-              </h1>
+              <h1 className="font-medium text-gray-900 text-xl">To-do App</h1>
               <div className="mt-4 w-full text-center h-60 bg-gray-200 rounded-xl">
-                <Link href="https://modernist-todo-app.vercel.app/">
+                <Link href="https://todo-app-ozcaneren.vercel.app/">
                   <img
-                    src="modernist.png"
+                    src="todo.png"
                     alt=""
-                    className="w-full h-full object-cover rounded-xl"
+                    className="w-full h-full object-contain bg-black rounded-xl"
                   />
                 </Link>
               </div>
@@ -138,26 +154,6 @@ export default function Page() {
                 <Link href="https://effective-fiesta-two.vercel.app/">
                   <img
                     src="alisraff.png"
-                    alt=""
-                    className="w-full h-full object-cover rounded-xl"
-                  />
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="w-full lg:w-[calc(50%-0.5rem)] h-[400px] p-4 border border-gray-200 bg-orange-100 rounded-3xl">
-            <div className="flex flex-col items-start justify-center gap-2">
-              <div className="w-full flex justify-between gap-2">
-                <img src="vite.png" alt="" className="h-12" />
-                <h3 className="text-gray-700 font-medium text-sm">Projects</h3>
-              </div>
-              <h1 className="font-medium text-gray-900 text-xl">
-                Dashboard for an any company
-              </h1>
-              <div className="mt-4 w-full text-center h-60 bg-gray-200 rounded-xl">
-                <Link href="https://dashboard-template-sand-six.vercel.app/#">
-                  <img
-                    src="dashboard.png"
                     alt=""
                     className="w-full h-full object-cover rounded-xl"
                   />
