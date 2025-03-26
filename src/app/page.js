@@ -103,10 +103,50 @@ export default function Page() {
         </div>
 
         <div className="flex flex-col lg:flex-row flex-wrap gap-4 justify-center items-center">
+          <div className="w-full lg:w-[calc(50%-0.5rem)] h-[400px] p-4 border border-gray-200 bg-teal-100 rounded-3xl">
+            <div className="flex flex-col items-start justify-center gap-2">
+              <div className="w-full flex justify-between gap-2">
+                <img src="vercel.png" alt="" className="h-12" />
+                <h3 className="text-gray-700 font-medium text-sm">Projects</h3>
+              </div>
+              <h1 className="font-medium text-gray-900 text-xl">
+                Dietician App
+              </h1>
+              <div className="mt-4 w-full text-center h-60 bg-gray-200 rounded-xl">
+                <Link href="https://dietician-app-sage.vercel.app/">
+                  <img
+                    src="dietician.png"
+                    alt=""
+                    className="w-full h-full object-contain bg-white rounded-xl"
+                  />
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="w-full lg:w-[calc(50%-0.5rem)] h-[400px] p-4 border border-gray-200 bg-black/10 rounded-3xl">
+            <div className="flex flex-col items-start justify-center gap-2">
+              <div className="w-full flex justify-between gap-2">
+                <img src="vercel.png" alt="" className="h-12" />
+                <h3 className="text-gray-700 font-medium text-sm">Projects</h3>
+              </div>
+              <h1 className="font-medium text-gray-900 text-xl">
+                My Components Library
+              </h1>
+              <div className="mt-4 w-full text-center h-60 bg-gray-200 rounded-xl">
+                <Link href="https://my-components-phi.vercel.app/">
+                  <img
+                    src="mycomp.png"
+                    alt=""
+                    className="w-full h-full object-cover rounded-xl"
+                  />
+                </Link>
+              </div>
+            </div>
+          </div>
           <div className="w-full lg:w-[calc(50%-0.5rem)] h-[400px] p-4 border border-gray-200 bg-orange-100 rounded-3xl">
             <div className="flex flex-col items-start justify-center gap-2">
               <div className="w-full flex justify-between gap-2">
-                <img src="vite.png" alt="" className="h-12" />
+                <img src="vercel.png" alt="" className="h-12" />
                 <h3 className="text-gray-700 font-medium text-sm">Projects</h3>
               </div>
               <h1 className="font-medium text-gray-900 text-xl">
@@ -118,6 +158,26 @@ export default function Page() {
                     src="ozcangida.png"
                     alt=""
                     className="w-full h-full object-contain bg-black rounded-xl"
+                  />
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="w-full lg:w-[calc(50%-0.5rem)] h-[400px] p-4 border border-gray-200 bg-green-100 rounded-3xl">
+            <div className="flex flex-col items-start justify-center gap-2">
+              <div className="w-full flex justify-between gap-2">
+                <img src="vercel.png" alt="" className="h-12" />
+                <h3 className="text-gray-700 font-medium text-sm">Projects</h3>
+              </div>
+              <h1 className="font-medium text-gray-900 text-xl">
+                Storys World
+              </h1>
+              <div className="mt-4 w-full text-center h-60 bg-gray-200 rounded-xl">
+                <Link href="https://storys-world.vercel.app/">
+                  <img
+                    src="storys.png"
+                    alt=""
+                    className="w-full h-full object-cover bg-zinc-800 rounded-xl"
                   />
                 </Link>
               </div>
@@ -174,6 +234,26 @@ export default function Page() {
                 <Link href="https://demo-hotel-website-erenozcan.vercel.app/">
                   <img
                     src="hotel.png"
+                    alt=""
+                    className="w-full h-full object-cover rounded-xl"
+                  />
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="w-full lg:w-[calc(50%-0.5rem)] h-[400px] p-4 border border-gray-200 bg-white rounded-3xl">
+            <div className="flex flex-col items-start justify-center gap-2">
+              <div className="w-full flex justify-between gap-2">
+                <img src="vercel.png" alt="" className="h-12" />
+                <h3 className="text-gray-700 font-medium text-sm">Projects</h3>
+              </div>
+              <h1 className="font-medium text-gray-900 text-xl">
+                Coming Soon...
+              </h1>
+              <div className="mt-4 w-full text-center h-60 bg-gray-200 rounded-xl">
+                <Link href="/">
+                  <img
+                    src="idk.png"
                     alt=""
                     className="w-full h-full object-cover rounded-xl"
                   />
